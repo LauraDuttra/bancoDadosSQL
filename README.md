@@ -44,3 +44,33 @@ CREATE TABLE assunto (
     descricao_assunto VARCHAR(300) NOT NULL
 );
 ```
+
+#### 1.5 Criando a tabela 'livro'
+```
+CREATE TABLE livro (
+    id_livro INT PRIMARY KEY AUTO_INCREMENT,
+    titulo VARCHAR(150) NOT NULL,
+    ano_publicado YEAR,
+    FOREING KEY(id_editora,) REFERENCES editora(id_editora),
+    FOREING KEY(id_autor) REFERENCES autor(id_autor),
+    FOREING KEY(id_assunto) REFERENCES assunto(id_assunto)
+);
+```
+
+```
+CREATE TABLE extra(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    produtos VARCHAR(50),
+    quantidade INT(20),
+    preco
+);
+```
+
+## Passo 2: editar tabelas usando 'ALTER'
+Após a criação da tabela, podemos adicionar novos campos. Vamos adicionar uma coluna 'email' na tabela 'autor'
+
+```SQL
+ALTER TABLE autor
+ADD COLUMN email VARCHAR (100),
+
+);
