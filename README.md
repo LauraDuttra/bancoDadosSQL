@@ -69,7 +69,7 @@ CREATE TABLE extra(
 );
 ```
 
-## Passo 2: editar tabelas usando 'ALTER'
+## Passo 2: Editar tabelas usando 'ALTER'
 Após a criação da tabela, podemos adicionar novos campos. Vamos adicionar uma coluna 'email' na tabela 'autor'
 
 ```SQL
@@ -126,7 +126,7 @@ VALUES
 ('Memórias Póstumas de Brás Cubas',1,2,3,1881);
 ```
 
-## Passo 5: atualizando os dados usando 'UPDATE'
+## Passo 5: Atualizando os dados usando 'UPDATE'
 Podemos atualizar os dados com o comando UPDATE.
 Vamos corrigir a data de publicação do livro 'Capitães da Areia'
 
@@ -136,11 +136,29 @@ SET ano_publicacao = 1938
 WHERE titulo = 'Capitães da Areia';
 ```
 
-## Passo 6: excluindo os dados usando 'DELETE'
+## Passo 6: Excluindo os dados usando 'DELETE'
 Para remover os registros de uma tabela usamos o comando 'DELETE'.
 Vamos excluir o livro 'Memórias Póstumas de Brás Cubas'.
 
 ```SQL
 DELETE FROM livro
 WHERE id_livro = 8;
+```
+
+## Passo 7: Consultando os dados usando 'SELECT'
+É possível selecionar os dados para visualizar da forma como quiser.
+Para isso usamos o comando 'SELECT'
+### Passo 7.1: Selecionar todos os livros com suas editoras e autores
+Vamos usar os dados das tabelas 'livros', 'editora', 'autor' e 'assunto'
+usando o comando 'JOIN'
+```SQL
+SELECT  livro.titulo AS nome,
+        editora.nome_editora AS editora,
+        autor.nome_autor AS autor,
+        assunto.descricao_assunto AS tema,
+        livro.ano_publicacao AS ano
+FROM livro
+JOIN editora ON livro.id_editora = editora.id_editora
+JOIN autor ON livro.id_autor = autor.id_autor
+JOIN assunto ON livro.id_assunto = assunto.id_assunto;
 ```
