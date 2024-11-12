@@ -148,6 +148,7 @@ WHERE id_livro = 8;
 ## Passo 7: Consultando os dados usando 'SELECT'
 É possível selecionar os dados para visualizar da forma como quiser.
 Para isso usamos o comando 'SELECT'
+
 ### Passo 7.1: Selecionar todos os livros com suas editoras e autores
 Vamos usar os dados das tabelas 'livros', 'editora', 'autor' e 'assunto'
 usando o comando 'JOIN'
@@ -162,3 +163,5 @@ JOIN editora ON livro.editora = editora.id_editora
 JOIN autor ON livro.autor = autor.id_autor
 JOIN assunto ON livro.assunto = assunto.id_assunto;
 ```
+
+### Passo 7.2: Exibir todos os livros com o mesmo tema
