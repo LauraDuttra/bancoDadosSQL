@@ -160,5 +160,5 @@ SELECT  livro.titulo AS nome,
 FROM livro
 JOIN editora ON livro.id_editora = editora.id_editora
 JOIN autor ON livro.id_autor = autor.id_autor
-JOIN assunto ON livro.id_assunto = assunto.id_assunto;
+JOIN assunto ON livro.assunto = assunto.id_assunto;
 ```
