@@ -158,7 +158,7 @@ SELECT  livro.titulo AS nome,
         assunto.descricao_assunto AS tema,
         livro.ano_publicacao AS ano
 FROM livro
-JOIN editora ON livro.id_editora = editora.id_editora
-JOIN autor ON livro.id_autor = autor.id_autor
+JOIN editora ON livro.editora = editora.id_editora
+JOIN autor ON livro.autor = autor.id_autor
 JOIN assunto ON livro.assunto = assunto.id_assunto;
 ```
