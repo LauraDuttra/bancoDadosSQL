@@ -164,4 +164,11 @@ JOIN autor ON livro.autor = autor.id_autor
 JOIN assunto ON livro.assunto = assunto.id_assunto;
 ```
 
-### Passo 7.2: Exibir todos os livros com o mesmo tema
+### Passo 7.2: Selecionar todos os livros com o mesmo assunto
+Para selecionar todos os livros que pertencem ao mesmo assunto, podemosfazer uma consulta utilizando o comando 'SELECT' como uma condição 'WHERE' especificando o que deseja visualizar.
+```SQL
+SELECT  livro.titulo AS titulo,
+        assunto.descricao_assunto AS tema
+FROM livroJOIN assunto ON livro.assunto = assunto.id_assunto
+WHERE assunto.descricao_assunto = 'Romance';
+```
