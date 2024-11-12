@@ -108,22 +108,22 @@ VALUES
 
 ### 4.3 Inserindo dados na tabela 'assunto'
 ```SQL
-INSERT INTO assunto(descricao_assunto)
+INSERT INTO assunto (descricao_assunto)
 VALUES
-('Ficção'),
+('Ficcção'),
 ('Mistério'),
-('Romance'),
-('Terror');
+('Terror'),
+('Romance');
 ```
 
 ### 4.4 Inserindo dados na tabela 'livros'
 ```SQL
-INSERT INTO livro(titulo, editora, autor, assunto, ano_publicacao)
+INSERT INTO livro(titulo, ano_publicacao, editora, autor, assunto)
 VALUES
-('Capitães da Areia',1,1,4,1937),
-('Dom Casmurro',2,2,4,1899),
-('A Biblioteca da Meia-Noite',3,3,2,2020),
-('Memórias Póstumas de Brás Cubas',1,2,3,1881);
+('Capitães da Areia',1937,1,1,4),
+('Dom Casmurro',1899,2,2,4),
+('A Biblioteca da Meia-Noite',2020,3,3,2),
+('Memórias Póstumas de Brás Cubas',1881,1,2,4);
 ```
 
 ## Passo 5: Atualizando os dados usando 'UPDATE'
