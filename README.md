@@ -53,7 +53,7 @@ CREATE TABLE livro (
     editora INT,
     autor INT,
     assunto INT,
-    ano_publicacao YEAR,
+    ano_publicacao INT,
     FOREIGN KEY(editora) REFERENCES editora(id_editora),
     FOREIGN KEY(autor) REFERENCES autor(id_autor),
     FOREIGN KEY(assunto) REFERENCES assunto(id_assunto)
@@ -124,4 +124,14 @@ VALUES
 ('Dom Casmurro',2,2,4,1899),
 ('A Biblioteca da Meia-Noite',3,3,2,2020),
 ('Memórias Póstumas de Brás Cubas',1,2,3,1881);
+```
+
+## Passo 5: atualizando os dados usando 'UPDATE'
+Podemos atualizar os dados com o comando UPDATE.
+Vamos corrigir a data de publicação do livro 'Capitães da Areia'
+
+```SQL
+UPDATE livro
+SET ano_publicacao = 1938
+WHERE título = 'Capitães da Areia';
 ```
