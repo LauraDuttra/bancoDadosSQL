@@ -118,10 +118,10 @@ VALUES
 
 ### 4.4 Inserindo dados na tabela 'livros'
 ```SQL
-	INSERT INTO livro(titulo, editora, autor, assunto, ano_publicacao)
-    VALUES
-    ('Capitães da Areia',1,1,4,1937),
-    ('Dom Casmurro',2,2,4,1899),
-    ('A Biblioteca da Meia-Noite',3,3,2,2020),
-	('Memórias Póstumas de Brás Cubas',1,2,3,1881);
-    ```
+INSERT INTO livro(titulo, editora, autor, assunto, ano_publicacao)
+VALUES
+('Capitães da Areia',1,1,4,1937),
+('Dom Casmurro',2,2,4,1899),
+('A Biblioteca da Meia-Noite',3,3,2,2020),
+('Memórias Póstumas de Brás Cubas',1,2,3,1881);
+```
