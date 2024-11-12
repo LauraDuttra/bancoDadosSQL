@@ -169,6 +169,7 @@ Para selecionar todos os livros que pertencem ao mesmo assunto, podemosfazer uma
 ```SQL
 SELECT  livro.titulo AS titulo,
         assunto.descricao_assunto AS tema
-FROM livroJOIN assunto ON livro.assunto = assunto.id_assunto
+FROM livro
+JOIN assunto ON livro.assunto = assunto.id_assunto
 WHERE assunto.descricao_assunto = 'Romance';
 ```
