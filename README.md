@@ -133,5 +133,5 @@ Vamos corrigir a data de publicação do livro 'Capitães da Areia'
 ```SQL
 UPDATE livro
 SET ano_publicacao = 1938
-WHERE título = 'Capitães da Areia';
+WHERE titulo = 'Capitães da Areia';
 ```
