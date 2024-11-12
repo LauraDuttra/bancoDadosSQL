@@ -135,3 +135,12 @@ UPDATE livro
 SET ano_publicacao = 1938
 WHERE titulo = 'Capitães da Areia';
 ```
+
+## Passo 6: excluindo os dados usando 'DELETE'
+Para remover os registros de uma tabela usamos o comando 'DELETE'.
+Vamos excluir o livro 'Memórias Póstumas de Brás Cubas'.
+
+```SQL
+DELETE FROM livro
+WHERE id_livro = 8;
+```
