@@ -1,4 +1,4 @@
-# Passo a passo: Criação de um Banco de Dados 🪑🎲
+# _Passo a passo: Criação de um Banco de Dados_ 🪑🎲
 Tutorial de como criar um banco de dados SQL que organiza as informações de 'livros', 'editora', 'autores' e 'assuntos'.
 Este guia será dividido em etapas para demonstrar desde a criação de tabelas, chaves até manipulação/consulta de dados.
 
